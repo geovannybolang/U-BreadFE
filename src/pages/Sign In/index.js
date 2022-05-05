@@ -1,10 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import {Header, Button, TextInput} from '../../components';
+import { StyleSheet, Text, View } from 'react-native'
 
 const SignIn = () => {
   return (
     <View>
-      <Text>SignIn pages</Text>
+      <Header title="Sign In"/>
+      <TextInput />
+      <Button title="Sign In" />
     </View>
   )
 }
