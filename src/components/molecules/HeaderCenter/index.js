@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const Header = ({title}) => {
+const HeaderCenter = ({title}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{title}</Text>
@@ -9,12 +9,11 @@ const Header = ({title}) => {
   );
 };
 
-export default Header;
+export default HeaderCenter;
 
 const styles = StyleSheet.create({
   container: {
-    paddingLeft: 24,
-    paddingTop: 28,
+    paddingTop: 24,
     paddingBottom: 9,
     backgroundColor: '#FEC58C',
   },
@@ -22,5 +21,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: 'Inter-Bold',
     color: 'black',
+    textAlign: 'center',
   },
 });
